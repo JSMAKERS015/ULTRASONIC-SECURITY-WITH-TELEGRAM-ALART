@@ -1,5 +1,6 @@
 # ULTRASONIC SECURITY🔐 SYSTEM⚙️ WITH TELEGRAM ALART⚠️
 
+This project monitors an area using an ultrasonic sensor and alerts the user via Telegram if an intruder is detected. It also displays real-time security status on an OLED screen.
 
 
 
@@ -7,16 +8,16 @@
 
 The connection of the ESP8266 to the display is relatively straightforward, and it is crucial to emphasize that the display operates on a 3.3V power supply. Make sure Ultrasonic Sensors Trig and Eco cnnections shouls be correct...
 
-|ESP8266|OLED|ULTRASONIC|LED| BUZZER|
-|---|---|---|---|---|
-|3V3|VCC|3.3V|---|---|
-|GND|GND|GND |GND|GND|
-|D1|SCL|---|---|---|
-|D2|SDA|---|---|---|
-|D5|---|TRIG|---|---|
-|D6|---|ECHO|---|---|
-|D7|---|----|VCC|---|
-|D8|---|----|---|VCC|
+| ESP8266 | OLED | ULTRASONIC | LED | BUZZER |
+| ------- | ---- | ---------- | --- | ------ |
+|   3V3   | VCC  |    3.3V    | --- | ------ |
+|   GND   | GND  |    GND     | GND |   GND  |
+|    D1   | SCL  |------------|-----|--------|
+|    D2   | SDA  |------------|-----|--------|
+|    D5   |------|    TRIG    |-----|--------|
+|    D6   |------|    ECHO    |-----|--------|
+|    D7   | -----|------------| VCC |--------|
+|    D8   |------|------------| VCC |--------|
 
 ### This configuration creates the wiring shown in the following figure.
 
@@ -47,13 +48,13 @@ http://arduino.esp8266.com/stable/package_esp8266com_index.json
    
 ### Step 3: Install Required Libraries
 Go to Sketch → Include Library → Manage Libraries, then install the following:
-1. MFRC522 
-2. SPI (built-in with Arduino IDE)
-3. Adafruit_GFX
-4. Adafruit_SSD1306
-5. ESP8266WiFi
-6. WiFiClientSecure
-7. UniversalTelegramBot
+
+1. SPI (built-in with Arduino IDE)
+2. Adafruit_GFX          [https://github.com/adafruit/Adafruit-GFX-Library.git]
+3. Adafruit_SSD1306      [https://github.com/adafruit/Adafruit_SSD1306.git]
+4. ESP8266WiFi           [https://github.com/ekstrand/ESP8266wifi.git]
+5. WiFiClientSecure 
+6. UniversalTelegramBot  [https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot.git]
    
 ### Step 4: Select the Correct Board and Port
 1. Connect your ESP8266 board via USB.
