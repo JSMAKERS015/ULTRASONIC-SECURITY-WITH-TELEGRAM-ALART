@@ -1,7 +1,6 @@
 # ULTRASONIC SECURITY🔐 SYSTEM⚙️ WITH TELEGRAM ALART⚠️
 
-This project monitors an area using an ultrasonic sensor and alerts the user via Telegram if an intruder is detected. It also displays real-time security status on an OLED screen.
-
+✅ Today, I successfully developed a WiFi Security System using ESP8266 🎉. This smart system is powered by an ultrasonic sensor 📡 that continuously monitors for motion or intrusion 🚶‍♂️. It features a 128x64 OLED display 📟 for real-time status updates like “SECURED” or “SECURITY BREACH” 🚨, a buzzer 🔊 for instant audio alerts, and an LED 💡 to visually indicate intrusion detection. What makes this system truly powerful is its integration with Telegram 📲 — sending live alerts right to your phone when motion is detected. It’s a perfect IoT-based solution 🌐 for home or office security, combining real-time monitoring, wireless alerts, and a compact design ⚡ to keep your space safe and smart. ✅
 
 
 ### **CONNECTIONS:**
